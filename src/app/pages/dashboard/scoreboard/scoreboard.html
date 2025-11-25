@@ -5,7 +5,7 @@
     <p class="subtitle">Ranking de tus escaneos por puntuación</p>
   </div>
 
-  <!--
+  
   <div class="faq-accordion">
     <button class="accordion-button" (click)="toggleAccordion()">
       <span>¿Cómo funciona?</span>
@@ -13,13 +13,13 @@
     </button>
     <div class="accordion-content" [class.open]="isAccordionOpen">
       <ul>
-        <li>Cada pregunta correcta vale <strong>10 puntos</strong></li>
-        <li>Las omisiones <strong>no cuentan</strong></li>
-        <li>Cada vulnerabilidad encontrada resta <strong>2 puntos</strong></li>
+        <li><strong>Cuestionario (60%):</strong> Obtienes puntos por cada respuesta correcta. Al primer intento recibes el 100% del puntaje, al segundo el 80%, y al tercero o más el 20%.</li>
+        <li><strong>Vulnerabilidades (40%):</strong> Inicias con 40 puntos base. Cada vulnerabilidad encontrada resta 5 puntos. Si la penalización supera los 40 puntos, el excedente se descuenta de tu puntaje del cuestionario.</li>
+        <li><strong>Calificación final:</strong> 90-100 (Excelente), 75-89 (Bueno), 60-74 (Regular), 40-59 (Deficiente), 0-39 (Crítico)</li>
       </ul>
     </div>
   </div>
--->
+
   <div class="user-stats-card" *ngIf="userStats">
     <div class="stats-header">
       <h2>Resumen General</h2>
